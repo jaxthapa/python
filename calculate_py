@@ -1,0 +1,56 @@
+def sum(a: int, b: int):
+    return a + b 
+def diff(a: int, b: int):
+    return a-b
+def mul(a: int, b: int):
+    return a * b
+def div(a: int, b: int):
+    return a / b
+def pow(a: int, b: int):
+    return a ** b
+def mod(a: int, b: int):
+    return a % b
+
+
+def main():
+    operation = int(input("enter the choice\n 1. addition\n2. subtraction\n3. multiplication \n4. division \n5. power \n6. modulus\nyour choice: "))
+
+    if operation ==1:
+      num1 = int(input('enter the first number:\t'))
+      num2 = int(input('enter the second number:\t'))
+      print(f"the sum of {num1} & {num2 }is: {sum(num1,num2)}")
+    elif operation ==2:   
+       num1= int (input('enter the first number:\t'))
+       num2= int(input('enter the second number\t'))
+       print(f"the difference of {num1} & {num2} is:{diff(num1,num2)}")
+    elif operation ==3: 
+       num1 = int(input('enter the first number:\t')) 
+       num2 = int(input('enter the second number:\t'))
+
+       print(f"the multiplication of {num1} & {num2} is: {mul(num1,num2)}") 
+
+    elif operation ==4:
+         num1 =int(input('enter the first number:\t'))
+         num2 = int(input('enter the second number:\t'))
+         if num1>num2 and num2!=0 and num1 !=0:
+             print(f"the division of {num1} & {num2} is: {div(num1,num2)}")
+         else:
+             print("entered number can't be zero and num 1 need to grater than num2!!!")  
+    elif operation ==5:
+        num1 =int(input('enter the first number:\t'))  
+        num2 =int(input('enter the second number:\t'))
+        print(f"the power of {num1} on {num2} is: {pow(num1,num2)}")
+    elif operation ==6:
+        num1 =int(input('enter the first number:\t'))  
+        num2 =int(input('enter the second number:\t'))  
+        print(f"the modulus of {num1} to {num2} is: {mod(num1,num2)}")
+    else:
+        print("please enter valid choice")   
+
+
+
+main()         
+
+           
+
+ 
